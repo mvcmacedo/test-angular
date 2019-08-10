@@ -25,6 +25,18 @@
   transition: transform .2s;
 }
 
+@media screen and (max-width: 975px) {
+  .card-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-container {
+    width: 100%;
+  }
+}
+
 .card-container > * {
   background: #4166b5;
   color: whitesmoke;
