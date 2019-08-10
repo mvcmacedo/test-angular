@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="button-container">
+    <button mat-fab color="accent" [routerLink]="['/user-create']">Add</button>
+  </div>
+  <div class="list-container">
+    <div *ngFor="let user of users" class="card-container">
+      <mat-card>
+        <mat-card-title>{{ user.name }}</mat-card-title>
+        <mat-card-content>
+          <mat-list>
+            <mat-list-item class="item">Limite de crédito</mat-list-item>
+            <mat-list-item>R$ {{ user.limit }}</mat-list-item>
+            <mat-list-item class="item">Risco</mat-list-item>
+            <mat-list-item>{{ user.risk }}</mat-list-item>
+            <mat-list-item class="item">Taxa de juros</mat-list-item>
+            <mat-list-item>{{ user.interest }}%</mat-list-item>
+          </mat-list>
+        </mat-card-content>
+      </mat-card>
+  </div>
+  </div>
+</div>
